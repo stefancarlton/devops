@@ -8,6 +8,7 @@ apt-get dist-upgrade -y
 apt-get install sudo -y
 apt-get install less -y
 apt-get install bash-completion -y
+apt-get install curl -y
 
 # Install OpenSSH
 apt-get install openssh-server -y
@@ -24,4 +25,14 @@ chown -R vagrant:vagrant /home/vagrant/.ssh
 grep -q -e 'vagrant ALL=(ALL) NOPASSWD:ALL' /etc/sudoers || echo 'vagrant ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # install chef
-apt-get install chef -y
+curl -L https://www.chef.io/chef/install.sh | bash
+
+#fix grub menu timeout
+#
+#  @TODO - do this using sed / programatically
+#
+# /etc/default/grub
+# GRUB_HIDDEN_TIMEOUT_QUIET=true
+# GRUB_TIMEOUT=0
+#
+# update-grub
