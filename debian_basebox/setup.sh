@@ -9,6 +9,7 @@ apt-get install sudo -y
 apt-get install less -y
 apt-get install bash-completion -y
 apt-get install curl -y
+apt-get install lsb-release -y
 
 # Install OpenSSH
 apt-get install openssh-server -y
