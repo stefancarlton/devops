@@ -45,11 +45,11 @@ source ~/.bashrc
 * Ondrej repo: `sudo apt install software-properties-common && sudo add-apt-repository ppa:ondrej/php`
 * Install PHP runtimes (note no FPM - this is just for tooling such as `phpunit`, `phpcs` or `phpstan` and IDE access): 
 ```bash 
-sudo apt install php7.3 php7.3-mysqli php7.3-xml php7.3-gd php7.3-xml php7.3-curl php7.3-mbstring php7.3-zip php7.3-x \
-		 php7.4 php7.4-mysqli php7.4-xml php7.4-gd php7.4-xml php7.4-curl php7.4-mbstring php7.4-zip php7.4-x \
-		 php8.1 php8.1-mysqli php8.1-xml php8.1-gd php8.1-xml php8.1-curl php8.1-mbstring php8.1-zip php8.1-x \
-		 php8.2 php8.2-mysqli php8.2-xml php8.2-gd php8.2-xml php8.2-curl php8.2-mbstring php8.2-zip php8.2-x \
-		 php8.3 php8.3-mysqli php8.3-xml php8.3-gd php8.3-xml php8.3-curl php8.3-mbstring php8.3-zip php8.3-x \
+sudo apt install php7.3 php7.3-mysqli php7.3-xml php7.3-gd php7.3-xml php7.3-curl php7.3-mbstring php7.3-zip php7.3-xml \
+		 php7.4 php7.4-mysqli php7.4-xml php7.4-gd php7.4-xml php7.4-curl php7.4-mbstring php7.4-zip php7.4-xml \
+		 php8.1 php8.1-mysqli php8.1-xml php8.1-gd php8.1-xml php8.1-curl php8.1-mbstring php8.1-zip php8.1-xml \
+		 php8.2 php8.2-mysqli php8.2-xml php8.2-gd php8.2-xml php8.2-curl php8.2-mbstring php8.2-zip php8.2-xml \
+		 php8.3 php8.3-mysqli php8.3-xml php8.3-gd php8.3-xml php8.3-curl php8.3-mbstring php8.3-zip php8.3-xml \
 ```
 * configure PHP to use 8.3 by default: `sudo update-alternatives --set php /usr/bin/php8.3`
 * Composer: 
