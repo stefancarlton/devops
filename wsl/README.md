@@ -23,7 +23,7 @@ Using [MS guide](https://learn.microsoft.com/en-us/windows/wsl/install)
 * Backup your `/.bashrc` just in case something goes awry: `cp ~/.bashrc ~/.bashrc.bak`
 * Passwordless sudo `echo "$USER ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee "/etc/sudoers.d/$USER.test" > /dev/null`
 * Update system: `sudo apt update && sudo apt upgrade`
-* Generic tooling: `sudo apt install git git-flow jq autossh zip 7zip make htop python3 python3-venv nano`
+* Generic tooling: `sudo apt install git git-flow jq autossh zip 7zip make htop python3 python3-venv nano fontconfig`
 * Ensure SSH config exists: `mkdir ~/.ssh/ && touch ~/.ssh/config`
 * Git Config:
 ```bash
